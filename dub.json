@@ -1,0 +1,13 @@
+{
+  "name": "emaki",
+  "description": "Official SDK for emaki (emaki.ai): generate Seedance 2.5 and Seedance 2.0 videos and images from D with your emaki API key.",
+  "homepage": "https://emaki.ai/?utm_source=dub&utm_medium=package",
+  "authors": ["emaki"],
+  "copyright": "Copyright (c) 2026 emaki",
+  "license": "MIT",
+  "targetType": "library",
+  "configurations": [
+    { "name": "library", "targetType": "library", "excludedSourceFiles": ["source/app.d"] },
+    { "name": "cli", "targetType": "executable", "targetName": "emaki", "mainSourceFile": "source/app.d" }
+  ]
+}
